@@ -56,6 +56,9 @@
                 <select id="compa" name="compa">
                     
                     <!--¿como se llama la variable que lleva el id del alumno?  value="" es el campo id PK de la tabla alumno, >Teresa<   campo nombre de tabla alumno-->
+                    
+                    <!-- En la pagina PHP se añadirán tantos options como filas en la tabla de alumnos haya (podemos controlar si añade al mismo usuario para evitar q ue un alumno se mande mensaje a si mismo) -->
+                 
                     <php?
                     if ($resultado->num_rows > 0) {
                         // Restablecer el puntero del resultado al inicio
