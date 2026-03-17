@@ -8,7 +8,7 @@
     }
 
     // consulta para obtener los alumnos
-    $sql = "SELECT idAlumno, nombre FROM alumno ORDER BY nombre";
+    $sql = "SELECT idAlumno, nombre FROM alumno ORDER BY nombre";   //Deberia meterlo por orden de id posiblemente
     $resultado = $conexion->query($sql);
 
     // array para almacenar los alumnos
