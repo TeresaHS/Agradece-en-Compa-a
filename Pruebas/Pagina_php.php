@@ -56,6 +56,8 @@
                 <select id="compa" name="compa">
                     
                     <!--¿como se llama la variable que lleva el id del alumno?  value="" es el campo id PK de la tabla alumno, >Teresa<   campo nombre de tabla alumno-->
+
+                    <!-- La PK que es un contador será el contenido del value. Para el texto que aparece dentro del option (lo que se visualiza como opcion en el html para elegir ese dato) será el campo nombre de la tabla alumnos -->
                     
                     <!-- En la pagina PHP se añadirán tantos options como filas en la tabla de alumnos haya (podemos controlar si añade al mismo usuario para evitar q ue un alumno se mande mensaje a si mismo) -->
                  
