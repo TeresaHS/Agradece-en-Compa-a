@@ -17,7 +17,7 @@
     if($resultado->num_rows>0){
         $fila = $resultado->fetch_array();
         $_SESSION["id"]=$fila["puesto"];
-        print_r($_SESSION);
+        
         header('Location: paginaHome.php');
         exit();
     }
