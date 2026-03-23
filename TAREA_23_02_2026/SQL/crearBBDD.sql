@@ -1,17 +1,17 @@
 CREATE TABLE alumnos (
 	puesto CHAR(2) NOT NULL PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL;
-	usuario VARCHAR(30) NULL,
-	pw VARCHAR(255) NULL,
-	nombreWeb VARCHAR(30) NULL,
-	nombreJesuita VARCHAR(80) NULL,
-	frase VARCHAR(150) NULL,
-	foto VARCHAR(30) NULL,
-)
-;
-
-/* Aun a espera de ver como dejar los campos dependiendo del proceso de insercion inicial */
-
+	nombre VARCHAR(100) NOT NULL,
+	usuario VARCHAR(30) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	nombreWeb VARCHAR(30) NOT NULL,
+	nombreJesuita VARCHAR(80) NOT NULL,
+	frase VARCHAR(150) NOT NULL,
+	foto VARCHAR(30) NOT NULL,
+	
+	UNIQUE INDEX usuario (usuario),
+	UNIQUE INDEX nombreWeb (nombreWeb),
+	UNIQUE INDEX foto (foto)
+);
 
 CREATE TABLE agradecimientos (
     idAgradecimiento SMALLINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
