@@ -1,11 +1,22 @@
-USE user1daw_BD1-16;
+INSERT INTO `alumnos` (`puesto`, `nombre`, `usuario`, `password`, `nombreWeb`, `nombreJesuita`, `frase`, `foto`) VALUES
+('01', 'Juan Pérez García', 'juan.perez', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'juanito', 'San Ignacio de Loyola', 'Para mayor gloria de Dios', 'foto_juan.jpg'),
+('02', 'María López Martínez', 'maria.lopez', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'marilop', 'San Francisco Javier', 'Amar y servir en todo', 'foto_maria.jpg'),
+('03', 'Carlos Rodríguez Fernández', 'carlos.rod', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'carlitos', 'San Pedro Claver', 'La fe sin obras es muerta', 'foto_carlos.jpg'),
+('04', 'Ana Sánchez Gómez', 'ana.sanchez', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'anita', 'San Alberto Hurtado', 'Alegría en el servicio', 'foto_ana.jpg'),
+('05', 'David Martín Ruiz', 'david.martin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'davicho', 'San Luis Gonzaga', 'Pureza y servicio', 'foto_david.jpg'),
+('06', 'Laura Jiménez Díaz', 'laura.jimenez', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'lauri', 'Santa Teresa de Jesús', 'En todo amar y servir', 'foto_laura.jpg'),
+('07', 'Pablo Moreno Torres', 'pablo.moreno', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'pablito', 'San Juan de Ávila', 'La verdad os hará libres', 'foto_pablo.jpg'),
+('08', 'Elena Vázquez Romero', 'elena.vazquez', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'elenita', 'Santa María Magdalena', 'La misericordia de Dios', 'foto_elena.jpg'),
+('09', 'Javier Molina Serrano', 'javier.molina', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'javichu', 'San Estanislao de Kostka', 'Siempre adelante', 'foto_javier.jpg'),
+('10', 'Cristina Navarro Gil', 'cristina.navarro', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'cris', 'Santa Rosa de Lima', 'Servir con alegría', 'foto_cristina.jpg'),
+('11', 'Alejandro Ramírez Flores', 'alejandro.ram', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'ale', 'San Francisco de Borja', 'Humildad y grandeza', 'foto_alejandro.jpg'),
+('12', 'Patricia Díaz Ortega', 'patricia.diaz', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'patri', 'Santa Clara de Asís', 'Paz y bien', 'foto_patricia.jpg'),
+('13', 'Manuel Herrera Vargas', 'manuel.herrera', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'manu', 'San Roberto Belarmino', 'Defender la fe', 'foto_manuel.jpg'),
+('14', 'Isabel Mendoza Castro', 'isabel.mendoza', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'isabel', 'Santa Juana de Arco', 'Por Dios y por la patria', 'foto_isabel.jpg'),
+('15', 'Francisco Ortiz Mora', 'francisco.ortiz', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'fran', 'San Francisco Javier', 'Id y enseñad', 'foto_francisco.jpg'),
+('16', 'Teresa Rubio Núñez', 'teresa.rubio', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'tere', 'Santa Teresita de Lisieux', 'La confianza y el amor', 'foto_teresa.jpg'),
+('17', 'Andrés Delgado Prieto', 'andres.delgado', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'andres', 'San Andrés Apóstol', 'Venid y veréis', 'foto_andres.jpg'),
+('18', 'Carmen Fuentes Silva', 'carmen.fuentes', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'carmela', 'Nuestra Señora de Guadalupe', '¿No estoy yo aquí que soy tu madre?', 'foto_carmen.jpg'),
+('19', 'Raúl Cano Méndez', 'raul.cano', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'rauli', 'San Ignacio de Antioquía', 'Siempre unidos a Cristo', 'foto_raul.jpg'),
+('20', 'Marta Arias Pascual', 'marta.arias', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'martita', 'Santa Marta', 'Servidora de Cristo', 'foto_marta.jpg');
 
-
-INSERT INTO alumnos VALUES ('00', 'Manuel Amigo Royán');
-INSERT INTO alumnos VALUES ('01', 'Samuel Barril Sosa');
-INSERT INTO alumnos VALUES ('02', 'Yehú Blanco Pinillo');
-INSERT INTO alumnos VALUES ('13', 'Aitor Gragera Martin');
-INSERT INTO alumnos VALUES ('14', 'Ivan Rodríguez Gómez-Landero');
-INSERT INTO alumnos VALUES ('15', 'Teresa Hernández Sánchez');
-INSERT INTO alumnos VALUES ('20', 'Sara Rivero Caminero');
-INSERT INTO alumnos VALUES ('21', 'Carlos Colorado Anselmo');
