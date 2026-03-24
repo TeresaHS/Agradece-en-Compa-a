@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     require 'configdb.php';
 
     function conectar(){
@@ -10,11 +12,29 @@
 
     function selectAgradecer(){
         $conexion=conectar();
-        $sql="select puesto,nombre from alumnos;";
+        $sql="SELECT puesto,nombre FROM alumnos;";
         $resultado=$conexion->query($sql);
+        
         while($fila=$resultado->fetch_array()){
-            echo '<option value="'.$fila["puesto"].'">'.$fila["nombre"].'</option>';
+
+        if($fila["puesto"] == $_SESSION["id"])
+            echo '<option value="'.$fila["puesto"].'" disabled>'.$fila["nombre"].'</option>';
+        else {
+
+            $sql2 = 'SELECT idReceptor FROM agradecimientos 
+                        WHERE idEmisor="'.$_SESSION["id"].'" 
+                        AND idReceptor="'.$fila["puesto"].'"';
+
+            $resultado2 = $conexion->query($sql2);
+            
+            if($resultado2->num_rows > 0)
+                echo '<option value="'.$fila["puesto"].'" disabled>'.$fila["nombre"].'</option>';
+            else
+                echo '<option value="'.$fila["puesto"].'">'.$fila["nombre"].'</option>';
+            
         }
+    }
+
         $conexion->close();
     }
 
@@ -44,9 +64,9 @@
         <a href="..\PHP\home.php"><h1><span class="mayusTitulo">A</span>GRADECE <span id="minusTitulo">EN</span> <span class="mayusTitulo">C</span>OMPAÑÍA</h1></a>
         <hr id="linea">
         <nav>
-            <a href="..\PHP\agradecer.php"><p class="enlaces" id="activo">Agradecer</p></a>
-            <a href="..\PHP\recibidos.php"><p class="enlaces">Recibir</p></a>
-            <a href="..\PHP\inicioSesion.php"><p class="enlaces">Cerrar Sesión</p></a>
+            <a href=".\agradecer.php"><p class="enlaces" id="activo">Agradecer</p></a>
+            <a href=".\recibidos.php"><p class="enlaces">Recibir</p></a>
+            <a href=".\logout.php"><p class="enlaces">Cerrar Sesión</p></a>
         </nav>
     </header>
     <main id="mainAgradecer">

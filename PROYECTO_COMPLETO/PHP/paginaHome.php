@@ -23,7 +23,7 @@
         <nav>
             <a href=".\agradecer.php"><p class="enlaces">Agradecer</p></a>
             <a href=".\recibidos.php"><p class="enlaces">Recibir</p></a>
-            <a href=".\inicioSesion.php"><p class="enlaces">Cerrar Sesión</p></a>
+            <a href=".\logout.php"><p class="enlaces">Cerrar Sesión</p></a>
         </nav>
     </header>
     <main>

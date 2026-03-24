@@ -17,20 +17,6 @@
         $conexion->close();
     }
 
-    /*function mostrarMensajeMandado(){
-        
-        echo '<section>';
-        echo 'Puesto destino: '.$_GET['compa'];
-        echo '<br>';
-        echo 'Mensaje: '.$_GET['mensaje'];
-        echo '</section>';
-
-    }*/
-
-    // $sql="INSERT INTO agradecimientos (mensaje,idEmisor,idReceptor) VALUES ('".$_GET['mensaje']."', '".$_GET['user']."','".$_GET['compa']."');"
-
-
-
     /*
     
     El problema de la inyeccion sql se puede solucionar convirtiendo el texto que llega a este php en String:
@@ -70,9 +56,9 @@
         <a href="..\PHP\home.php"><h1><span class="mayusTitulo">A</span>GRADECE <span id="minusTitulo">EN</span> <span class="mayusTitulo">C</span>OMPAÑÍA</h1></a>
         <hr id="linea">
         <nav>
-            <a href="..\PHP\agradecer.php"><p class="enlaces" id="activo">Agradecer</p></a>
-            <a href="..\PHP\recibidos.php"><p class="enlaces">Recibir</p></a>
-            <a href="..\PHP\inicioSesion.php"><p class="enlaces">Cerrar Sesión</p></a>
+            <a href=".\agradecer.php"><p class="enlaces" id="activo">Agradecer</p></a>
+            <a href=".\recibidos.php"><p class="enlaces">Recibir</p></a>
+            <a href=".\logout.php"><p class="enlaces">Cerrar Sesión</p></a>
         </nav>
     </header>
     <main id="mainAgradecer">

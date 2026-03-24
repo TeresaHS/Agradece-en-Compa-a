@@ -22,7 +22,7 @@
         exit();
     }
     else{
-        header('Location: inicioSesionFallo.php');
+        header('Location: inicioSesionFallo.html');
         exit();
     }
 

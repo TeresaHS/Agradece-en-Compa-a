@@ -31,7 +31,7 @@ header{
     border: none;
     z-index: 3;
     position: relative;
-    top: 80px;
+    top: 60px;
     text-align: center;
     background-color: #e5f5ff8c;
 }
@@ -321,10 +321,10 @@ h3{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 40px;
+    bottom: 20px;
     width: 500px;
     text-align: center;
-    height: 50px;
+    height: 40px;
     border-radius: 15px;
     align-content: center;
 }
