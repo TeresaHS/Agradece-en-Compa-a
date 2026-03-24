@@ -61,7 +61,7 @@
 </head>
 <body>
     <header>
-        <a href="..\PHP\home.php"><h1><span class="mayusTitulo">A</span>GRADECE <span id="minusTitulo">EN</span> <span class="mayusTitulo">C</span>OMPAÑÍA</h1></a>
+        <a href=".\paginaHome.html"><h1><span class="mayusTitulo">A</span>GRADECE <span id="minusTitulo">EN</span> <span class="mayusTitulo">C</span>OMPAÑÍA</h1></a>
         <hr id="linea">
         <nav>
             <a href=".\agradecer.php"><p class="enlaces" id="activo">Agradecer</p></a>

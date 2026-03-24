@@ -1,6 +1,5 @@
-
 <?php
-/*
+
     session_start();
 
     require 'configdb.php';
@@ -14,22 +13,31 @@
     function listado(){
 
         $conexion=conectar();
-
-        $sql='SELECT (idAgradecimiento,mensaje,idReceptor) FROM agradecimientos WHERE idEmisor="'.$_SESSION["id"];.'";';
-
+        $id = $_SESSION["id"];
+        $sql = "SELECT idAgradecimiento, idEmisor FROM agradecimientos WHERE idReceptor = '$id'";
         $resultado=$conexion->query($sql);
+
+        
 
         while($fila=$resultado->fetch_array()){
 
-           $sql2='SELECT (idAgradecimiento,mensaje,idReceptor) FROM agradecimientos WHERE idEmisor="'.$_SESSION["id"];.'";'; 
+            $sql2 = "SELECT nombreJesuita FROM alumnos WHERE puesto = '".$fila["idEmisor"]."';";
+
+            $resultado2=$conexion->query($sql2);
+            $nombre=$resultado2->fetch_array();
+
+           echo '<section class="mensaje">';
+           echo '<div class="codigoMensaje"><p>#'.$fila["idAgradecimiento"].'</p></div>';
+           echo '<p class="cabeceraMensaje"><span class="nombreJes">'.$nombre["nombreJesuita"].'</span> te ha mandado un agradecimiento</p>';
+           echo '<div class="verMensaje"><p>Ver Mensaje</p></div>';
+           echo '</section>';
 
         }
-
 
         $conexion->close();
 
     }
-*/
+
 ?>
 
 
@@ -40,6 +48,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recibidos</title>
     <link rel="stylesheet" href=".\estilo.css"/>
+    <!--<meta http-equiv="refresh" content="5">-->
 
     <!-- Las siguientes lineas son para tener la fuente de Montserrat de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +62,7 @@
 </head>
 <body>
     <header>
-        <a href="..\PHP\home.php"><h1><span class="mayusTitulo">A</span>GRADECE <span id="minusTitulo">EN</span> <span class="mayusTitulo">C</span>OMPAÑÍA</h1></a>
+        <a href=".\paginaHome.html"><h1><span class="mayusTitulo">A</span>GRADECE <span id="minusTitulo">EN</span> <span class="mayusTitulo">C</span>OMPAÑÍA</h1></a>
         <hr id="linea">
         <nav>
             <a href=".\agradecer.php"><p class="enlaces">Agradecer</p></a>
@@ -63,9 +72,9 @@
     </header>
     <main>
         <?php
-            /*
+            
             listado();
-            */
+            
         ?>
     </main>
 </body>

@@ -16,4 +16,9 @@ session_destroy();
 header('Location: inicioSesion.html');
 exit();
 
+/* El exit es por si da error el header, interrumpe proceso*/
+
+/* NUNCA poner el echo antes del header porque no se puede tener dos cabeceras, header cargare una nueva del html */
+
+
 ?>

@@ -18,7 +18,7 @@
         $fila = $resultado->fetch_array();
         $_SESSION["id"]=$fila["puesto"];
         
-        header('Location: paginaHome.php');
+        header('Location: paginaHome.html');
         exit();
     }
     else{
